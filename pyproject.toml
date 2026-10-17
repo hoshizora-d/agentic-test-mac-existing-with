@@ -1,0 +1,13 @@
+[project]
+name = "orders-api"
+version = "0.3.0"
+description = "Order management API for the warehouse system"
+requires-python = ">=3.12"
+dependencies = ["fastapi>=0.115", "pydantic>=2.8"]
+
+[tool.ruff]
+line-length = 100
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]
